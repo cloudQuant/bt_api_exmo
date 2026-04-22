@@ -155,7 +155,6 @@ class ExmoRequestData(Feed):
             self.data_queue.put(data)
 
     def _get_server_time(self, extra_data=None, **kwargs):
-        import time as tm
 
         request_type = "get_server_time"
         path = "GET /time"
